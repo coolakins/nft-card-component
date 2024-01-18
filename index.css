@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+.crypto-card {
+  min-width: 375px;
+  width: 35%;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.crypto-card-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(179, 90%, 49%, 0.455);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.crypto-card-image {
+  width: 100%;
+  min-width: 350px;
+  border-radius: 15px;
+}
+
+.crypto-card-img:hover .overlay {
+  display: flex;
+  cursor: pointer;
+}
+
+.crypto-card-info {
+  padding: 20px 5px 30px 5px;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0 20px 0;
+  font-size: 30px;
+}
+p {
+  color: hsl(215, 61%, 69%);
+  margin: 20px 0 10px 0;
+  font-size: 20px;
+}
+
+.crypto-card-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 15px;
+}
+.crypto-card-icon1,
+.crypto-card-icon2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crypto-card-icon1 span {
+  margin-left: 10px;
+  color: hsl(178, 70%, 73%);
+  font-size: 20px;
+  font-weight: 600;
+}
+.crypto-card-icon2 span {
+  margin-left: 10px;
+  color: hsl(215, 61%, 69%);
+  font-size: 17px;
+}
+hr {
+  color: hsl(215, 32%, 27%);
+}
+footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 2rem;
+}
+footer img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+footer span {
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
